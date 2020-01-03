@@ -1,0 +1,2 @@
+# SEVICTI
+a school website
