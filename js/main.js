@@ -28,3 +28,10 @@
             "Web Master & Video Editing": null,
         }
     });
+    // material Boxed 
+     const mb = document.querySelectorAll('.materialboxed');
+     M.Materialbox.init(mb, {});
+
+    // //scrollsky
+     const ss = document.querySelectorAll('.scrollspy');
+     M.ScrollSpy.init(ss, {});
