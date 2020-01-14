@@ -7,3 +7,9 @@
 .section-follow .fa-4x{
     margin: 5px 10px;
 }
+.popular-site {
+    padding: 30px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}

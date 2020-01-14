@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- import Google Icon Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900">
-    <link rel="stylesheet" href="fonts/icomoon/style.css"> -->
-    <!-- import materialise.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen, projection"/>
-    <!-- <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/jquery-ui.css">
-    <link rel="stylesheet" href="style/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
-    <link rel="stylesheet" href="style/main.css">
+   
+    
+   
+   
     <!-- let browser know website is optimized for mobile -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SEVICTI Higher Institute</title>
+<!-- font materialize -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen, projection"/>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style/main.css">
+    <!-- jquery and bootstrap js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <!-- font for all -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+
+    <!-- <link rel="stylesheet" href="style/bootstrap.min.css">
 </head>
 <body id="home" class="scrollspy">
     <!-- navbar -->
@@ -45,10 +50,10 @@
                             <a href="assets/course.html">Courses</a>
                         </li>
                         <li>
-                            <a href="#about us">About Us</a>
+                            <a href="#follow">About Us</a>
                         </li>
                         <li>
-                            <a href="#contacts">Contacts</a>
+                            <a href="#contact">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -70,10 +75,10 @@
             <a href="assets/course.html">Courses</a>
         </li>
         <li>
-            <a href="#about us">About Us</a>
+            <a href="#follow">About Us</a>
         </li>
         <li>
-            <a href="#contacts">Contacts</a>
+            <a href="#contact">Contacts</a>
         </li>
     </ul>
     <!-- section slider -->
@@ -127,6 +132,96 @@
         </div>
     </section>
     <!-- section icon Boxes -->
+
+    <!-- section popular  courses -->
+    <div class="carousel-popular" id="popular-couses">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <h2 class=" popular-site text-center">Popular Courses</h2>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="carousel slide" id="carousel-popular" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-popular" data-slide="0" class="active"></li>
+                        <li data-target="#carousel-popular" data-slide="1"></li>
+                        <li data-target="#carousel-popular" data-slide="2"></li>
+                        <li data-target="#carousel-popular" data-slide="3"></li>
+                        <li data-target="#carousel-popular" data-slide="4"></li>
+                        <li data-target="#carousel-popular" data-slide="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+
+                        <div class="item active text-center">
+                            <div class="col-sm-7">
+                            <img src="images/course_2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-sm-5">
+                        <div class="course-1-item">
+                            <figure class="thumnail">
+                                
+                                <div class="category">
+                                    <h3>Web Design</h3>
+                                </div>
+                                <!-- <div class="price">120000 CFA</div> -->
+                            </figure>
+                            <div class="course-1-content pb-4">
+                                <h2>How To Design And Developed Web Applications with HTML and CSS </h2>
+                                <div class="rating text-center mb-2">
+                                    <span class="icon-star2 text-danger"></span>
+                                    <span class="icon-star2 text-danger"></span>
+                                    <span class="icon-star2 text-danger"></span>
+                                    <span class="icon-star2 text-danger"></span>
+                                    <span class="icon-star2 text-warning"></span>
+                                </div>
+                                <p class="desc mb-4">After this Training Student shall be able to build responsive sites </p>
+                                <p><a href="#" class="btn btn-primary rounded-0 px-4">Enroll In This Course</a></p>
+                                <p><a href="#" class="btn btn-primary rounded-0 px-4">Read More</a></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                        <div class="item text-center">
+                            <img src="images/course_3.jpg" class="img-fluid" alt="">
+                            <h2>Database Management</h2>
+                            <p>Learn How to Manage large amount of data by enrolling into SEVICTI</p>
+                        </div>
+                        <div class="item text-center">
+                            <img src="images/course_4.jpg" class="img-fluid" alt="">
+                            <h2>App Development</h2>
+                            <p>Build your first App with SEVICTI</p>
+                        </div>
+                        <div class="item text-center">
+                            <img src="images/course_5.jpg" class="img-fluid" alt="">
+                            <h2>Computerize Accounting</h2>
+                            <p>be an accountant within one year of creative learning</p>
+                        </div>
+                        <div class="item text-center">
+                            <img src="images/course_6.jpg" class="img-fluid" alt="" class="">
+                            <h2>Secreteriat</h2>
+                            <p>Get your employment after one year of  studies </p>
+                        </div>
+                        <div class="item text-center">
+                            <img src="images/hero_1.jpg" class="img-fluid" alt="" class="">
+                            <h2>Computer for Teen</h2>
+                            <p>Teach YOUR KIDS computer </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- section academic work -->
     <section class="section section-icon grey lighten-4 center">
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
@@ -286,7 +381,7 @@
 
 
     <!-- section follow -->
-    <section class="section section-follow  teal darken-2 white-text center">
+    <section id="follow" class="section section-follow  teal darken-2 white-text center">
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -383,6 +478,36 @@
             </div>
         </div>
     </section>
+    <div class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active text-center bg-dark">
+                                <img src="images/course_2.jpg" class="center-block" alt="">
+                                <h2 style="color: saddlebrown;">hello world this is a slide 1</h2>
+                            </div>
+                            <div class="item text-center bg-success">
+                                <img src="images/course_1.jpg" class="center-block" alt="">
+                                <h2 style="color: royalblue;">hello world this is a slide 2</h2>
+                            </div>
+                            <div class="item text-center bg-secondary">
+                                <img src="images/course_3.jpg" class="center-block d-block m-100S" alt="">
+                                <h2 style="color: red;">hello world this is a slide 3</h2>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- footer -->
     <footer class="section teal darker-2 white-text center">
         <p class="flow-text">SEVICTI &copy; 2020</p>
