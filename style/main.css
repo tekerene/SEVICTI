@@ -95,3 +95,7 @@ height: auto !important;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: black;
+}
+.home {
+    background: red important!;
+}
