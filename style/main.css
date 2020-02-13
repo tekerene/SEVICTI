@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
- 
+ margin: 0;
+ padding: 0;
 }
 
 header {
@@ -73,15 +74,16 @@ height: auto !important;
 width: 100%;
 height: 100%;
 }
+/****** footer starts ******/
 .footer {
     padding: 4rem;
-    font-size: 15px;
     color: #fff;
-
-    
+}
+.footer-sub{
+  font-family: 'Courier New', Courier, monospace;
 }
  .btn {
-     background-color: #1fa18d;
+    background-color: #198b7a;
     text-align: center;
     align-items: top;
     padding: 2rem;
@@ -101,14 +103,22 @@ height: 100%;
  .footer-heading {
     color: red;
 }
-.list-unstled li a {
-    color: #fff;
+.list-unstled li a{
+  font-size: large;
+  color: #000;
+  text-align: left;
 }
+/* .list li a {
+    color: #fff;
+    font-size: 20; 
+}*/
 .learn {
     background: #000;
     color: #fff;
 }
+
 /* blog section */
+
 .testimonials {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -179,28 +189,6 @@ height: 100%;
     height: 100%;
     width: 100%;
   }
- /* .carousel-inner {
-    background-color: red;
-  }
-  .popular_courses {
-    background-color: #000;
-    padding-bottom: 100px;
-  }
- .item,  img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 300px;
-  border: 1px solid black;
-  }
-  .carousel .item {
-    height: 300px;
-  } */
-  /* .item,  img {
-  
-    min-height: 300px;
-    border: 1px solid black;
-  } */
   .item-header {
     font-size: 30px;
     font-weight: 900;
@@ -254,8 +242,8 @@ height: 100%;
   /********** SECTION COURSE  ***********/
   /********** STARTS *************/
 .site-section {
-  width: 100vw;
-  height: 100vh;
+ margin-top: 300px;
+ padding: 100px;
 }
 .main_title p{
   font-size: larger;
@@ -264,6 +252,54 @@ height: 100%;
   color: gray;
 }
 
+/* section testimonial */
+
+.testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(..//images/pic1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+     /* margin-top: -100px;  */
+    margin-bottom: -100px;
+}
+.testimonials .carousel-indicators {
+    bottom: -60px;
+}
+.testimonials .sub-heading1 p{
+    color: white;
+}
+/* .carousel-inner img{
+    widows: 150px;
+    height: 150px;
+     border-radius: 100%;
+    border: 2px solid deepskyblue;
+    padding: 5px;
+} */
+.center-block {
+  widows: 150px;
+    height: 150px;
+     border-radius: 100%;
+    border: 2px solid deepskyblue;
+    padding: 5px;
+}
+.testimonials .carousel-indicators li.active {
+background-color: deepskyblue;
+}
+.testimonials .carousel-indicators li {
+    border: deepskyblue;
+}
+ .center-block {
+    height: 350px;
+    width: 350px;
+}
 
 
   /********** COURSE SECTION ENDS *************/
+
+  /******* MAIN FOOTER  *******/
+  .list-unstled {
+    font-size: 10px !important;
+  }
