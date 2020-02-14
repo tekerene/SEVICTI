@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500|Rubik:500, 600");
+
 body {
   font-family: Arial, Helvetica, sans-serif;
  margin: 0;
  padding: 0;
+ line-height: 25px;
+ font-weight: 400;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #002347; }
 
 header {
   position: fixed;
@@ -64,6 +77,7 @@ height: auto !important;
 }
 .site-section {
     padding: 2.5em 0;
+
 }
 .logo {
     height: 100px;
@@ -102,16 +116,17 @@ height: 100%;
 }
  .footer-heading {
     color: red;
+    font-weight: 700;
+   text-transform: capitalize;
 }
 .list-unstled li a{
   font-size: large;
   color: #000;
-  text-align: left;
+  text-align: center;
 }
-/* .list li a {
-    color: #fff;
-    font-size: 20; 
-}*/
+.list-unstled {
+  text-align: left !important;
+}
 .learn {
     background: #000;
     color: #fff;
@@ -123,6 +138,22 @@ height: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: black;
+}
+.banner_link {
+  padding: 30px;
+ 
+  
+ 
+}
+.banner_link a {
+   margin-left: 20px;
+    color: #fff;
+    font-size: 40px;
+    float: right;
+}
+.banner_link a:hover {
+background-color: #198b7a;
+padding: 15px;
 }
 
 .main_title {
@@ -298,6 +329,74 @@ background-color: deepskyblue;
 
 
   /********** COURSE SECTION ENDS *************/
+
+  /***** About Us starts ******/
+
+  .banner_area {
+    position: relative;
+    background: url(../images/sevicti-lab.jpg) no-repeat center center;
+    z-index: 1;
+    min-height: 392px;
+    padding-top: 0 !important;
+   }
+   .banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 392px;
+    z-index: 1; 
+  }
+  .banner_area .banner_inner .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 35, 71, 0.8);
+   }
+   .banner_area .banner_inner .banner_content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+   }
+   .banner_area .banner_inner .banner_content h2 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 0px;
+   }
+   .banner_area .banner_inner .banner_content .page_link {
+    display: inline-block;
+    padding: 7px 20px; 
+  }
+  .banner_area .banner_inner .banner_content .page_link a {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin-right: 20px;
+    position: relative;
+    text-transform: capitalize; 
+  }
+  .banner_area .banner_inner .banner_content .page_link a:before {
+    content: "/";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+   }
+  .banner_area .banner_inner .banner_content .page_link a:last-child {
+    margin-right: 0px;
+   }
+    .banner_area .banner_inner .banner_content .page_link a:last-child:before {
+      display: none; 
+    }
+    .banner_paragraph {
+      margin-top: 100px;  
+      font-size: 30px;   
+      text-align: center;                                                                                                        
+    }
+
+/***** About Us starts ******/     
+
 
   /******* MAIN FOOTER  *******/
   .list-unstled {
