@@ -131,9 +131,6 @@ height: 100%;
     background: #000;
     color: #fff;
 }
-
-/* blog section */
-
 .testimonials {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -263,12 +260,63 @@ padding: 15px;
     font-weight: 700;
     text-transform: uppercase;
   }
+  .popular_courses {
+min-width: 100% auto;
+min-height: 100% auto;
+  }
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+  .item-body {
+     background-color: white;
+     padding-top: 20px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin: 30px;
+     
+  }
+  .item-header {
+    border: 2px solid deepskyblue;
+    background-color: teal;
+    color: black;
+    margin-bottom: 10px;
+   line-height: normal;
+   border-radius: 5%;
+  }
   .item-para {
     font-size: large;
     font-weight: 700;
     margin-top: 30px;
   }
-
+  @media (max-width: 413px) {
+    .carousel {
+     
+      padding-top: 20px;
+      float: none;
+      width: auto;
+      height: auto;
+      margin: 2%;
+    }
+    /* .fix {
+      min-width: 390px;
+      min-height: 200%;
+    } */
+  }
+  @media (min-width: 986px) {
+    .carousel .slide {
+    width: auto;
+    height: auto;
+    margin: 10%;
+    }
+    .item-body {
+      height: 500px;
+    
+    } 
+    .fix {
+      height: 300px;
+    }
+  }
 
   /********** SECTION COURSE  ***********/
   /********** STARTS *************/
