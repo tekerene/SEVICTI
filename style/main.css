@@ -52,7 +52,8 @@ header {
     background-repeat: no-repeat;
     position: relative;
     font-family: 'Times New Roman', Times, serif;
-    /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(161, 80, 80, 0.9), url('../images/blog_1.jpg'); */
+    padding: 30px;
+    /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(161, 80, 80, 0.9), url('../images/blog_1.jpg')); */
 }
 .subscribe:before {
     position: absolute;
@@ -115,18 +116,24 @@ height: 100%;
     border-radius: 1rem;
 }
  .footer-heading {
-    color: red;
-    font-weight: 700;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
    text-transform: capitalize;
+   text-underline-position: below;
 }
 .list-unstled li a{
   font-size: large;
   color: #000;
-  text-align: center;
+   text-align: center;
 }
+
 .list-unstled {
-  text-align: left !important;
-}
+  text-align: center !important;
+  margin-left: 10px;
+
+
+ }
 .learn {
     background: #000;
     color: #fff;
@@ -134,7 +141,7 @@ height: 100%;
 .testimonials {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: black;
+    background-color: teal;
 }
 .banner_link {
   padding: 30px;
@@ -213,7 +220,7 @@ padding: 15px;
                 color: #fff;
             
                 */
-   .fix{
+  .fix{
     height: 100%;
     width: 100%;
   }
@@ -224,7 +231,6 @@ padding: 15px;
   .item-btns {
    padding: 30px;
    font-size: 25px;
-
   }
   .btn {
      display: flex;
@@ -234,6 +240,7 @@ padding: 15px;
     margin-top: 5px;
     justify-content: center;
     text-align: center;
+   
 
   }
   .btn:hover {
@@ -261,8 +268,9 @@ padding: 15px;
     text-transform: uppercase;
   }
   .popular_courses {
-min-width: 100% auto;
-min-height: 100% auto;
+width:  auto;
+height:  auto;
+/* background-color: black; */
   }
   .carousel {
     width: auto;
@@ -278,7 +286,7 @@ min-height: 100% auto;
   }
   .item-header {
     border: 2px solid deepskyblue;
-    background-color: teal;
+    background-color: gray;
     color: black;
     margin-bottom: 10px;
    line-height: normal;
@@ -289,19 +297,38 @@ min-height: 100% auto;
     font-weight: 700;
     margin-top: 30px;
   }
-  @media (max-width: 413px) {
+   @media (max-width: 413px) {
     .carousel {
-     
       padding-top: 20px;
       float: none;
       width: auto;
       height: auto;
       margin: 2%;
     }
-    /* .fix {
-      min-width: 390px;
-      min-height: 200%;
-    } */
+     .fix {
+      min-width: 100% auto;
+      min-height: 100% auto;
+    } 
+    
+  } 
+  @media (max-width: 500px) {
+    .item-body h3 a {
+      display: flex;
+    }
+    .item-header {
+      font-size: 25px;
+    }
+    .item-btns {
+      width: 100% auto;
+      height: 100% auto;
+
+    }
+    .btn {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
   }
   @media (min-width: 986px) {
     .carousel .slide {
@@ -334,10 +361,6 @@ min-height: 100% auto;
 /* section testimonial */
 
 .testimonials {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(..//images/pic1.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     padding-top: 120px;
     padding-bottom: 120px;
     color: white;
@@ -359,10 +382,16 @@ min-height: 100% auto;
 } */
 .center-block {
   widows: 150px;
-    height: 150px;
-     border-radius: 100%;
-    border: 2px solid deepskyblue;
-    padding: 5px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid deepskyblue;
+  padding: 5px;
+}
+.testimonial-info h2{
+  color: #8a8a8a;
+}
+.testimonial-info h4 {
+color: teal;
 }
 .testimonials .carousel-indicators li.active {
 background-color: deepskyblue;
@@ -371,10 +400,56 @@ background-color: deepskyblue;
     border: deepskyblue;
 }
  .center-block {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
 }
+  .testimonial-carousel {
+  opacity: 1rem;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(..//images/pic1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  }
+  .testimonial-head {
+    width: 100%;
+    height: 100%;
+  }
+   .testimonial-text {
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 70%;
+    margin-top: 10rem;
+    font-size: 25px;
+  } 
+  @media (max-width: 780px) {
+    .testimonial-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    @media (max-width: 500px) {
+      .center-block {
+        height: 250px;
+        width: 230px;
+       text-align: center;
 
+      }
+      .testimonial-text {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+      }
+    }
+  }
 
   /********** COURSE SECTION ENDS *************/
 
