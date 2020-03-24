@@ -270,7 +270,7 @@ padding: 15px;
   .popular_courses {
 width:  auto;
 height:  auto;
-/* background-color: black; */
+/* background-color: teal; */
   }
   .carousel {
     width: auto;
@@ -638,7 +638,8 @@ background-color: deepskyblue;
       color: #fdc632; }
 
 .blog_post img {
-  max-width: 100%; }
+  max-width: 100% auto; 
+}
 
 .blog_details {
   padding-top: 20px; }
@@ -744,6 +745,20 @@ background-color: deepskyblue;
   align-self: center;
   padding-left: 20px; 
 }
+.post_item img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width:30%;
+  height: 100px;
+  float: left;
+}
+.media-body {
+   display: flex; 
+   width: 65%;
+   float: right;
+   align-items: center;
+} 
   .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
     font-size: 14px;
     line-height: 20px;

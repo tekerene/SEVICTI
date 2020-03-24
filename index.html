@@ -657,7 +657,7 @@
                             <div class="email-press form-group">
                             <input type="text" class="email rounded form-control mr-2 py-3" placeholder="Enter your email" required>
                             </div>
-                            <button type="submit" class="btn btn-primary rounded py-3 px-4">Send</button>
+                            <button class="btn btn-primary btn-sent rounded py-3 px-4">Send</button>
                         </form>
                     </div>
                 </div>
@@ -724,5 +724,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/main.js"></script>
+
+    <!-- fire base -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <!-- TODO : Add SDKS for Firebase products that you want to use 
+        https://firebase.google.com/docs/web/setup#available-libraries-->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+        <script>
+            //your web app's Firebase configuration
+
+            var firebaseConfig = {
+                apiKey: "AIzaSyDvULR8PbnkzDtO1e0MufnzQ4IX2z3ipNk",
+                authDomain: "sevicti-c15f2.firebaseapp.com",
+                databaseURL: "https://sevicti-c15f2.firebaseio.com",
+                projectId: "sevicti-c15f2",
+                storageBucket: "sevicti-c15f2.appspot.com",
+                messagingSenderId: "534377416644",
+                appId: "1:534377416644:web:17ecf1d875ab01480bc691",
+                measurementId: "G-22SR2XX4FD"
+            };
+            //Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+            const email =  document.querySelector('.email');
+            const button = document.querySelector('.btn-sent');
+            const user = 'teke rene';
+
+            button.addEventListener('click', function() {
+                const newEmail = email.value;
+                console.log('new email added');
+            })
+        </script>
 </body>
 </html>
