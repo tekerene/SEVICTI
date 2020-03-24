@@ -749,15 +749,15 @@ background-color: deepskyblue;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  width:30%;
-  height: 100px;
+  width:40%;
+  /* height: 100px; */
   float: left;
 }
 .media-body {
-   display: flex; 
-   width: 65%;
+   /* display: flex;  */
+   width: 60%;
    float: right;
-   align-items: center;
+   /* align-items: center; */
 } 
   .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
     font-size: 14px;
