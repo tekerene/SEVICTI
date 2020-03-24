@@ -220,10 +220,15 @@ padding: 15px;
                 color: #fff;
             
                 */
-  .fix{
-    height: 100%;
-    width: 100%;
-  }
+  .fix {
+      min-width: 100%;
+      height: 100%;
+     
+    } 
+    .card {
+      width: 100%;
+    }
+      
   .item-header {
     font-size: 30px;
     font-weight: 900;
@@ -306,8 +311,8 @@ height:  auto;
       margin: 2%;
     }
      .fix {
-      min-width: 100% auto;
-      min-height: 100% auto;
+      max-width: 100vw;
+      max-height: 100vh;
     } 
     
   } 
